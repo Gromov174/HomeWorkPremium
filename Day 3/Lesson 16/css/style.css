@@ -1,0 +1,34 @@
+
+.container {
+  display: inline-block;
+  background-color: gray;
+}
+
+/* ====================Приоритезация селекторов======================== */
+
+
+/* 1 or 1 000 000 */
+h1 {
+color: #39a036 !important;
+}
+
+/* 100 */
+#title {
+  color: rgb(0, 66, 151);
+}
+
+/* 11 */
+h1.title {
+color: #ccc7c7;
+}
+
+/* 10 */
+.title {
+color: #000000;
+}
+
+/* 10 */
+[class] {
+  color: #781e8a;
+}
+
