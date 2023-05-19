@@ -1,0 +1,15 @@
+.text-container {
+display: flex;
+align-items: center;
+flex-flow: column;
+margin-top: 300px;
+font-family: sans-serif;
+}
+
+.text-container__title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 200%;
+  text-decoration: underline rgb(248, 0, 50);
+  background-color: gray;
+}

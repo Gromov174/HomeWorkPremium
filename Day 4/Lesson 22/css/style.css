@@ -1,0 +1,24 @@
+.text-container {
+display: flex;
+align-items: center;
+flex-flow: column;
+margin-top: 20px;
+font-family: sans-serif;
+}
+
+.text-container__title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: underline rgb(248, 0, 50);
+  margin-bottom: 30px;
+}
+
+.text-container__text {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  max-width: 50%;
+  padding: 25px 25px 0px;
+  height: 100px;
+  overflow: auto;
+}
