@@ -1,0 +1,15 @@
+.block {
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  left: 50%;  
+  width: 300px;
+  min-height: 100px;
+  box-shadow: 0 0 20px #0f50a5;
+  border-radius: 20px;
+  background-color: #2cc767;
+}
+
+.space {
+  margin-bottom: 2000px;
+}

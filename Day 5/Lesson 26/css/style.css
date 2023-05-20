@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  gap: 100px;
+}
+
+.block__text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =======Первый Вариант======= */
+
+.block-1 {
+  width: 200px;
+  height: 200px;
+  background-color: #8a93a8;
+  border: 5px solid #111;
+  border-radius: 10px;
+  transition: border-color 3s 2s;
+}
+
+/* =======Второй Вариант======= */
+
+.block-2 {
+  width: 200px;
+  height: 200px;
+  background-color: #8a93a8;
+  border: 5px solid #111;
+  border-radius: 10px;
+  transition-property: border-color;
+  transition-duration: 3s;
+  transition-delay: 2s;
+}
+
+.block:hover {
+  border-color: #0e49c9;
+}

@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 500px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #a9aab6;
+}
+
+.block {
+  transform: rotate(-30deg) translateX(10px);
+  width: 200px;
+  height: 400px;
+  box-shadow: 0 0 30px #a71e47;
+  border-radius: 20px;
+  background-color: #3b3c49;
+}
