@@ -1,0 +1,87 @@
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  max-width: 100%;
+}
+
+.title-1 {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  margin-top: 300px;
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+
+/* ======Первый Вариант====== */
+
+.title-1::before {
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+
+.title-1::after {
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+/* ======Второй Вариант====== */
+
+.title-2 {
+  display: inline-flex;
+  text-align: center;
+  margin-top: 50px;
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+
+.title-2::before {
+  content: "";
+  display: inline-flex;
+  align-self: center;
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+
+.title-2::after {
+  content: "";
+  display: inline-flex;
+  align-self: center;
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
