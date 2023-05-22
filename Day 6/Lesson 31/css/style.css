@@ -1,0 +1,73 @@
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  max-width: 100%;
+}
+
+.title-1, .title-2 {
+  display: inline-block;
+  position: relative;
+  margin-top: 250px;
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+
+/* ======Первый Вариант====== */
+
+.title-1::before, .title-1::after  {
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%; 
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.title-1::before {
+  left: 0;
+  background-color: blue;
+}
+
+
+.title-1::after {
+  right: 0;
+  background-color: red;
+}
+
+/* ======Второй Вариант====== */
+
+.title-2 {
+  display: inline-flex;
+  margin-top: 50px;
+}
+
+.title-2::before, .title-2::after {
+  content: "";
+  display: inline-flex;
+  align-self: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;                      
+}
+
+.title-2::before {
+  margin-right: 5px;
+  background-color: blue;
+}
+
+
+.title-2::after {
+  margin-left: 5px;
+  background-color: red;
+}
